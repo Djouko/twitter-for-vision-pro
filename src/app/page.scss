@@ -1,3 +1,7 @@
+*{
+  color: white;
+}
+
 .main {
   background: url("./../../public/banner.jpg");
   background-size: cover;
@@ -19,15 +23,13 @@
 }
 
 .input {
-  border-radius: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.00);
-  background: var(--dark-shade-grey-60, rgba(101, 99, 92, 0.60));
-  box-shadow: 0px 3px 4px 0px rgba(52, 50, 50, 0.35) inset;
+  border: 1px solid rgba(255, 255, 255, 0);
+  background: var(--dark-shade-grey-60, rgba(101, 99, 92, 0.6));
+  box-shadow: 0px 1px 2px 0px rgba(52, 50, 50, 0.1) inset;
   backdrop-filter: blur(50px);
 }
 
 .nav {
-  display: none;
   width: 75px;
   overflow: hidden;
   border-radius: 34px;
@@ -56,54 +58,37 @@
 
 .nav-right,
 .nav-left {
+  overflow-y: scroll;
   width: 390px;
   height: 670px;
   flex-shrink: 0;
-  overflow: hidden;
   border-radius: 34px;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.05),
+  box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.25),
     0px 1px 1px 0px rgba(255, 255, 255, 0.25) inset,
     0px -1px 1px 0px rgba(255, 255, 255, 0.25) inset,
     3px 4px 2px -3px rgba(255, 255, 255, 0.55) inset;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(50px);
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .box-container {
   width: 780px;
   height: 670px;
-
-  border-radius: 40px;
-  box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.05),
+overflow-y: scroll;
+  box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.25),
     0px 1px 1px 0px rgba(255, 255, 255, 0.25) inset,
     0px -1px 1px 0px rgba(255, 255, 255, 0.25) inset,
     3px 4px 2px -3px rgba(255, 255, 255, 0.55) inset;
-  backdrop-filter: blur(98px);
-
-  //   border-radius: 40px;
-  // background: rgba(255, 255, 255, 0.25);
-  // backdrop-filter: blur(50px);
-}
-
-.box-container-left {
-  border-radius: 10px;
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.3) 0%,
-      rgba(0, 0, 0, 0.3) 100%
-    ),
-    rgba(255, 255, 255, 0.1);
-}
-
-.box-container-right {
-  border-radius: 10px;
-  background: linear-gradient(
-      180deg,
-      rgba(0, 163, 255, 0.2) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
-    rgba(255, 255, 255, 0.1);
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(50px);
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .box-author {
